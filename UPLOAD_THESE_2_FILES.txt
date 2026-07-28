@@ -1,0 +1,8 @@
+UPLOAD ONLY THESE TWO FILES TO THE GITHUB REPOSITORY ROOT:
+1. index.html
+2. logo.png
+
+Replace the existing index.html and logo.png when GitHub asks.
+Do not delete the CNAME file.
+After the commit, open:
+https://dwelliomarketing.com/?v=logo-final
