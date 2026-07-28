@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@500;600&display=swap');
 :root{--black:#080808;--ink:#151310;--paper:#f4efe6;--paper2:#e9e0d2;--gold:#bd8a4c;--muted:#9b958d;--line:rgba(189,138,76,.35)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#fff;font-family:Montserrat,Arial,sans-serif;line-height:1.65}img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 48px));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:500}.serif,h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:.92;margin:0}h1{font-size:clamp(4.2rem,8vw,8.8rem)}h2{font-size:clamp(3.2rem,6vw,6.2rem)}h3{font-size:2.25rem}.muted{color:#bdb7ae}
 header{position:fixed;inset:0 0 auto;z-index:50;background:linear-gradient(#080808e8,#080808a0,transparent);transition:.3s}header.scrolled{background:#080808f2;border-bottom:1px solid #ffffff12}.nav{height:96px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.brand img{width:62px;height:62px;object-fit:contain;background:#fff;padding:5px}.brand span{font-size:.72rem;letter-spacing:.22em}.navlinks{display:flex;align-items:center;gap:28px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}.navlinks a{opacity:.84}.navlinks a:hover{color:var(--gold);opacity:1}.navcta,.btn-gold,.btn-outline{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 27px;text-transform:uppercase;letter-spacing:.16em;font-size:.7rem}.navcta,.btn-gold{background:var(--gold);color:#fff}.btn-outline{border:1px solid #ffffff77}.mobile-menu{display:none;border:0;background:none;color:#fff;font-size:2rem}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
@@ -248,3 +248,19 @@ footer{padding-top:88px}
 }
 
 @media (min-width:901px){.mobile-menu{display:none!important}}
+
+
+/* DWELLIO EN / AR LANGUAGE SYSTEM */
+.language-switch{display:inline-flex;align-items:center;justify-content:center;min-width:70px;height:40px;padding:0 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:.25s;background:rgba(8,8,8,.38);backdrop-filter:blur(8px)}
+.language-switch:hover{border-color:var(--gold);color:var(--gold)}
+html[dir="rtl"] body{font-family:'Noto Kufi Arabic','Montserrat',Arial,sans-serif;text-align:right}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3{font-family:'Noto Naskh Arabic','Cormorant Garamond',serif;line-height:1.12;letter-spacing:0}
+html[dir="rtl"] .eyebrow{letter-spacing:.08em}
+html[dir="rtl"] .navlinks,html[dir="rtl"] .actions,html[dir="rtl"] .brand,html[dir="rtl"] .facts,html[dir="rtl"] .role-grid{direction:rtl}
+html[dir="rtl"] .project-copy,html[dir="rtl"] .page-hero-content,html[dir="rtl"] .partner-copy{text-align:right}
+html[dir="rtl"] .footergrid a:hover{transform:translateX(-3px)}
+html[dir="rtl"] .scroll-note{left:30px;right:auto}
+html[dir="rtl"] .whatsapp{right:auto;left:24px}
+html[dir="rtl"] .link{direction:rtl}
+@media(max-width:900px){.language-switch{margin-inline-start:auto;margin-inline-end:12px;min-width:62px;height:38px}.nav{gap:10px}.mobile-menu{flex:0 0 auto}html[dir="rtl"] .navlinks{text-align:center}}
+@media(max-width:560px){.language-switch{min-width:54px;padding:0 10px;font-size:.62rem}.nav{height:96px}.brand img{width:58px;height:58px}}

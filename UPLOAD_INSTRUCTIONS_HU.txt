@@ -1,10 +1,12 @@
-DWELLIO PREMIUM v2.0 STABLE — FELTÖLTÉS
+DWELLIO PREMIUM BILINGUAL EN–AR v3
 
-1. Csomagold ki a ZIP-fájlt.
-2. A ZIP-ben található ÖSSZES fájlt töltsd fel a GitHub repository főmappájába.
-3. Engedélyezd az azonos nevű fájlok cseréjét.
-4. A meglévő képfájlokat (logo.png, .jpeg képek) ne töröld.
-5. Nyomd meg a Commit changes gombot.
-6. Várj 2–5 percet, majd nyisd meg a weboldalt privát Safari-ablakban.
+1. Csomagold ki a ZIP fájlt.
+2. A TELJES tartalmat töltsd fel a GitHub repository főmappájába.
+3. Az azonos nevű fájlokat cseréld le.
+4. Az „ar” mappát mappaként töltsd fel a benne lévő 7 HTML-fájllal.
+5. A meglévő képeket és a logo.png fájlt ne töröld.
+6. Commit changes, majd várj 2–5 percet.
+7. Nyisd meg privát Safari-ablakban.
 
-A csomag új gyorsítótár-verziót használ, ezért a Safari az új CSS- és JavaScript-fájlokat fogja betölteni.
+Az angol oldalon az „العربية” gomb, az arab oldalon az „EN” gomb vált nyelvet.
+Az arab verzió teljes RTL (jobbról balra) elrendezést használ.
