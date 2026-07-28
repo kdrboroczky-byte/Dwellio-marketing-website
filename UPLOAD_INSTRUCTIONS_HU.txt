@@ -1,14 +1,9 @@
-DWELLIO MARKETING – VÉGLEGES PREMIUM WEBOLDAL
+DWELLIO PREMIUM UI 2.0 – FELTÖLTÉS
 
-FONTOS: a ZIP-ben lévő 12 fájlt töltsd fel a GitHub repository FŐMAPPÁJÁBA.
-A meglévő projektképeket és a logo.png fájlt NE töröld.
+1. A ZIP tartalmát töltsd fel a GitHub repository főmappájába.
+2. Az azonos nevű HTML, CSS, JS, sitemap és robots fájlokat cseréld le.
+3. A meglévő projektfotókat és a logo.png fájlt NE töröld.
+4. Nyomd meg a Commit changes gombot.
+5. Várj 2–5 percet, majd nyisd meg a dwelliomarketing.com oldalt privát Safari-ablakban.
 
-1. Nyisd meg a GitHub repositoryt.
-2. Add file → Upload files.
-3. Töltsd fel a ZIP kicsomagolt tartalmát.
-4. Az azonos nevű fájlokat cseréld le.
-5. Commit changes.
-6. Várj 2–5 percet, majd frissítsd a dwelliomarketing.com oldalt.
-
-Főoldali nyitókép: ab-living1.jpeg
-A csomag nem tartalmazza újra a képeket, mert azok már a repository főmappájában vannak.
+A csomag csak a weboldal kódját frissíti, a meglévő saját fotókat használja.

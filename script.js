@@ -18,3 +18,13 @@ if(gallery){
   box.querySelector('.lightbox-close').onclick=close;box.querySelector('.lightbox-prev').onclick=()=>show(current-1);box.querySelector('.lightbox-next').onclick=()=>show(current+1);box.addEventListener('click',e=>{if(e.target===box)close()});
   addEventListener('keydown',e=>{if(!box.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1)});
 }
+
+// Refined navigation behavior and subtle image parallax
+const menuButton=document.querySelector('.mobile-menu');
+if(menuButton){
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}});
+}
+if(!reduce){
+  const heroImage=document.querySelector('.hero>img,.page-hero>img');
+  if(heroImage){addEventListener('scroll',()=>{const y=Math.min(scrollY*.08,40);heroImage.style.transform=`translate3d(0,${y}px,0) scale(1.015)`;},{passive:true});}
+}
