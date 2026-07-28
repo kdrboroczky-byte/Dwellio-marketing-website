@@ -1,0 +1,12 @@
+DWELLIO – EREDETI ANGOL–ARAB WEBOLDAL VISSZAÁLLÍTÁSA
+
+1. A ZIP fájlt az iPhone Fájlok alkalmazásában bontsd ki.
+2. A GitHub repository főkönyvtárában válaszd: Add file / Upload files.
+3. A kibontott mappából jelöld ki és töltsd fel az ÖSSZES fájlt.
+4. A meglévő, azonos nevű fájlokat írd felül.
+5. A CNAME fájlt tartsd meg; ebben a csomagban a helyes CNAME is benne van.
+6. Nyomd meg a Commit changes gombot.
+7. Várj 1–3 percet, majd nyisd meg:
+   https://dwelliomarketing.com/?restore=dd65265
+
+Ez a dd65265 commit eredeti angol–arab weboldala.
