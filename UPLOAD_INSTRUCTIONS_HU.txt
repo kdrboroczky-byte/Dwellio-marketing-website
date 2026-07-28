@@ -1,12 +1,14 @@
-DWELLIO PREMIUM BILINGUAL EN–AR v3
+DWELLIO FINAL ENGLISH–ARABIC v4 – FELTÖLTÉS IPHONE-RÓL
 
 1. Csomagold ki a ZIP fájlt.
-2. A TELJES tartalmat töltsd fel a GitHub repository főmappájába.
-3. Az azonos nevű fájlokat cseréld le.
-4. Az „ar” mappát mappaként töltsd fel a benne lévő 7 HTML-fájllal.
-5. A meglévő képeket és a logo.png fájlt ne töröld.
-6. Commit changes, majd várj 2–5 percet.
-7. Nyisd meg privát Safari-ablakban.
+2. A GitHub repository főmappájába töltsd fel az ÖSSZES gyökérfájlt (index.html, style.css, script.js stb.).
+3. Az „ar” mappát is kötelező feltölteni a benne lévő 7 HTML-fájllal.
+4. Az azonos nevű fájlokat cseréld le, majd Commit changes.
+5. A meglévő képeket és logo.png fájlt ne töröld.
+6. Várj 2–5 percet, majd privát Safari-ablakban nyisd meg a weboldalt.
 
-Az angol oldalon az „العربية” gomb, az arab oldalon az „EN” gomb vált nyelvet.
-Az arab verzió teljes RTL (jobbról balra) elrendezést használ.
+ELLENŐRZÉS
+– A fejlécben a menü mellett látszik: AR · العربية
+– A teljes képernyős menüben is szerepel az العربية gomb.
+– Az arab kezdőlap címe: /ar/ vagy /ar/index.html
+– Az arab oldalon az EN gombbal lehet visszaváltani.

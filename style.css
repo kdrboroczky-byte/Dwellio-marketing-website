@@ -264,3 +264,60 @@ html[dir="rtl"] .whatsapp{right:auto;left:24px}
 html[dir="rtl"] .link{direction:rtl}
 @media(max-width:900px){.language-switch{margin-inline-start:auto;margin-inline-end:12px;min-width:62px;height:38px}.nav{gap:10px}.mobile-menu{flex:0 0 auto}html[dir="rtl"] .navlinks{text-align:center}}
 @media(max-width:560px){.language-switch{min-width:54px;padding:0 10px;font-size:.62rem}.nav{height:96px}.brand img{width:58px;height:58px}}
+
+
+/* =========================================================
+   DWELLIO FINAL BILINGUAL HEADER — v4
+   Visible language control on mobile and desktop.
+   ========================================================= */
+.nav{position:relative}
+.language-switch{
+  flex:0 0 auto;
+  white-space:nowrap;
+  z-index:1003;
+  font-weight:600;
+}
+.menu-language-switch{display:none!important}
+@media (max-width:900px){
+  .nav{padding-inline:0!important}
+  .brand{margin-inline-end:auto}
+  .language-switch{
+    display:inline-flex!important;
+    position:absolute!important;
+    inset-inline-end:64px!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    min-width:78px!important;
+    height:42px!important;
+    padding:0 12px!important;
+    border-color:rgba(201,151,85,.72)!important;
+    color:#d8b27c!important;
+    background:rgba(8,8,8,.9)!important;
+    font-size:.66rem!important;
+    letter-spacing:.08em!important;
+  }
+  .mobile-menu{position:absolute!important;inset-inline-end:0!important;top:50%!important;transform:translateY(-50%)!important}
+  .navlinks .menu-language-switch{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:12px!important;
+    order:-1;
+    width:auto!important;
+    min-width:165px!important;
+    margin-bottom:8px!important;
+    padding:11px 20px!important;
+    border:1px solid rgba(201,151,85,.62)!important;
+    border-radius:999px!important;
+    color:#d8b27c!important;
+    font-family:'Montserrat',Arial,sans-serif!important;
+    font-size:.82rem!important;
+    line-height:1!important;
+    letter-spacing:.08em!important;
+  }
+  .menu-language-switch span{font-size:.68rem;opacity:.72}
+}
+@media (max-width:390px){
+  .language-switch{min-width:66px!important;padding:0 8px!important;font-size:.58rem!important;inset-inline-end:60px!important}
+  .mobile-menu{width:46px!important;height:46px!important}
+}
