@@ -1,9 +1,10 @@
-DWELLIO PREMIUM UI 2.0 – FELTÖLTÉS
+DWELLIO PREMIUM v2.0 STABLE — FELTÖLTÉS
 
-1. A ZIP tartalmát töltsd fel a GitHub repository főmappájába.
-2. Az azonos nevű HTML, CSS, JS, sitemap és robots fájlokat cseréld le.
-3. A meglévő projektfotókat és a logo.png fájlt NE töröld.
-4. Nyomd meg a Commit changes gombot.
-5. Várj 2–5 percet, majd nyisd meg a dwelliomarketing.com oldalt privát Safari-ablakban.
+1. Csomagold ki a ZIP-fájlt.
+2. A ZIP-ben található ÖSSZES fájlt töltsd fel a GitHub repository főmappájába.
+3. Engedélyezd az azonos nevű fájlok cseréjét.
+4. A meglévő képfájlokat (logo.png, .jpeg képek) ne töröld.
+5. Nyomd meg a Commit changes gombot.
+6. Várj 2–5 percet, majd nyisd meg a weboldalt privát Safari-ablakban.
 
-A csomag csak a weboldal kódját frissíti, a meglévő saját fotókat használja.
+A csomag új gyorsítótár-verziót használ, ezért a Safari az új CSS- és JavaScript-fájlokat fogja betölteni.
