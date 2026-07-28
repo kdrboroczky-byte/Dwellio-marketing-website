@@ -1,0 +1,6 @@
+Dwellio flat bilingual upload package
+
+Upload ALL files in this folder to the GitHub repository root.
+There is NO ar folder in this version, so iPhone upload cannot flatten the language structure.
+English home: index.html
+Arabic home: index-ar.html
