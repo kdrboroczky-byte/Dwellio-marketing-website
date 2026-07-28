@@ -1,9 +1,14 @@
-DWELLIO WEBSITE 2 – FELTÖLTÉS
+DWELLIO MARKETING – VÉGLEGES PREMIUM WEBOLDAL
 
-1. A GitHub repository főoldalán válaszd: Add file → Upload files.
-2. Jelöld ki a ZIP-ben található összes fájlt, a txt útmutató kivételével.
-3. Hagyd kiválasztva: Commit directly to the main branch.
-4. Nyomd meg: Commit changes.
-5. Várj 1–3 percet, majd frissítsd a dwelliomarketing.com oldalt.
+FONTOS: a ZIP-ben lévő 12 fájlt töltsd fel a GitHub repository FŐMAPPÁJÁBA.
+A meglévő projektképeket és a logo.png fájlt NE töröld.
 
-A képeket nem kell újra feltölteni. A weboldal a GitHub főmappájában már meglévő logo.png, ab-..., mg-... és sh-... fájlokat használja.
+1. Nyisd meg a GitHub repositoryt.
+2. Add file → Upload files.
+3. Töltsd fel a ZIP kicsomagolt tartalmát.
+4. Az azonos nevű fájlokat cseréld le.
+5. Commit changes.
+6. Várj 2–5 percet, majd frissítsd a dwelliomarketing.com oldalt.
+
+Főoldali nyitókép: ab-living1.jpeg
+A csomag nem tartalmazza újra a képeket, mert azok már a repository főmappájában vannak.
