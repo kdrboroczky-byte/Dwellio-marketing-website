@@ -1,11 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dwellio Marketing LLC — Interior design, furnishing and turnkey renovation across Egypt." />
+  <title>Dwellio Marketing | Interior Design & Turnkey Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#11110f; --cream:#f6f1e8; --paper:#fffdf9; --gold:#b7894b;
+      --muted:#706a61; --line:rgba(17,17,15,.14);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Montserrat,Arial,sans-serif}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,92vw);margin:auto}
+    .eyebrow{color:var(--gold);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0}
+    h2{font-size:clamp(2.3rem,5vw,4.4rem);line-height:.95}
+    p{line-height:1.75}
+    header{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(17,17,15,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.12)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;color:#fff}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{width:68px;height:50px;object-fit:contain;background:#f7f2e9;padding:4px}
+    .brand span{font-family:"Cormorant Garamond",serif;font-size:1.3rem;letter-spacing:.08em}
+    .links{display:flex;gap:26px;align-items:center;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+    .cta{border:1px solid var(--gold);padding:13px 18px;color:#fff}
+    .hero{min-height:100vh;display:grid;align-items:end;position:relative;color:#fff;background:#111}
+    .hero-bg{position:absolute;inset:0}
+    .hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.24) 60%,rgba(0,0,0,.2))}
+    .hero-content{position:relative;z-index:2;padding:170px 0 110px;max-width:720px}
+    .hero h1{font-size:clamp(3.7rem,8vw,7.3rem);line-height:.84;font-weight:500}
+    .hero p{font-size:1rem;max-width:550px}
+    .hero-actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+    .btn{padding:15px 22px;border:1px solid var(--gold);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}
+    .btn.primary{background:var(--gold);color:white}
+    .trust{background:var(--ink);color:white}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .trust-item{padding:28px;border-right:1px solid rgba(255,255,255,.12)}
+    .trust-item strong{display:block;color:var(--gold);font-family:"Cormorant Garamond";font-size:1.6rem;margin-bottom:4px}
+    section{padding:105px 0}
+    .intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:end}
+    .intro p{color:var(--muted);font-size:1.05rem}
+    .projects{background:var(--cream)}
+    .section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:44px}
+    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;border:1px solid var(--line);overflow:hidden}
+    .card-image{height:320px}
+    .card-body{padding:24px}
+    .card h3{font-size:2rem}
+    .meta{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:8px 0 14px}
+    .card p{color:var(--muted);font-size:.9rem}
+    .text-link{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-weight:600}
+    .services{background:var(--ink);color:white}
+    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.15);margin-top:45px}
+    .service{padding:36px 28px;border-right:1px solid rgba(255,255,255,.15)}
+    .service span{font-family:"Cormorant Garamond";font-size:3.4rem;color:var(--gold)}
+    .service h3{font-size:1.65rem;margin:10px 0}
+    .service p{color:#c9c2b7;font-size:.88rem}
+    .details{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:stretch}
+    .details-copy{padding:52px;background:var(--cream)}
+    .details-copy ul{padding:0;list-style:none;line-height:2.1;color:var(--muted)}
+    .details-copy li:before{content:"✓";color:var(--gold);margin-right:10px}
+    .mosaic{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:260px 260px;gap:12px}
+    .mosaic .big{grid-row:1/3}
+    .process{background:var(--cream)}
+    .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:42px}
+    .step{border-top:1px solid var(--line);padding-top:20px}
+    .step b{font-family:"Cormorant Garamond";font-size:2.2rem;color:var(--gold)}
+    .step h3{font-size:1.45rem;margin:10px 0}
+    .step p{font-size:.84rem;color:var(--muted)}
+    .contact{position:relative;color:#fff;background:#111;padding:95px 0}
+    .contact:before{content:"";position:absolute;inset:0;background:url('assets/al-borouj-living.jpeg') center/cover;opacity:.28}
+    .contact .container{position:relative;display:flex;align-items:center;justify-content:space-between;gap:40px}
+    footer{background:#090909;color:#d6d1c8;padding:55px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:55px}
+    footer img{width:150px;height:auto;object-fit:contain;background:#f7f2e9;padding:8px}
+    footer p,footer a{font-size:.85rem;color:#bdb7ad}
+    .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:38px;padding-top:20px;font-size:.75rem;color:#8f8a82}
+    @media(max-width:900px){
+      .links a:not(.cta){display:none}
+      .intro,.details{grid-template-columns:1fr}
+      .project-grid{grid-template-columns:1fr}
+      .service-grid{grid-template-columns:1fr 1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .trust-grid{grid-template-columns:1fr 1fr}
+      .mosaic{grid-template-columns:1fr;grid-template-rows:280px 220px 220px}
+      .mosaic .big{grid-row:auto}
+      .footer-grid{grid-template-columns:1fr}
+      .contact .container{display:block}
+    }
+    @media(max-width:560px){
+      .brand span{display:none}
+      .hero h1{font-size:3.7rem}
+      .service-grid,.steps,.trust-grid{grid-template-columns:1fr}
+      .section-head{display:block}
+      section{padding:75px 0}
+      .details-copy{padding:30px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="Dwellio Marketing logo"><span>DWELLIO MARKETING</span></a>
+    <nav class="links">
+      <a href="#projects">Projects</a><a href="#services">Services</a><a href="#process">Our Process</a><a href="partners.html">Partners</a><a href="#contact">Contact</a>
+      <a class="cta" href="https://wa.me/201094339399">Book a Consultation</a>
+    </nav>
+  </div>
+</header>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Dwellio Marketing | Luxury Interior Design Egypt</title><meta content="Luxury interior design, custom furniture and turnkey renovation across Egypt." name="description"/><link href="style.css?v=dwellio-final-polish-v5" rel="stylesheet"/><link href="https://dwelliomarketing.com/" rel="canonical"/><link href="https://dwelliomarketing.com/" hreflang="en" rel="alternate"/><link href="https://dwelliomarketing.com/index-ar.html" hreflang="ar" rel="alternate"/><link href="https://dwelliomarketing.com/" hreflang="x-default" rel="alternate"/><meta content="#0d0d0d" name="theme-color"/><meta content="Dwellio Marketing | Luxury Interior Design Egypt" property="og:title"/><meta content="Luxury interior design, custom furniture and turnkey renovation across Egypt." property="og:description"/><meta content="website" property="og:type"/><meta content="https://dwelliomarketing.com/" property="og:url"/><meta content="https://dwelliomarketing.com/ab-living1.jpeg" property="og:image"/></head><body><header><div class="container nav"><a class="brand" href="index.html"><img alt="Dwellio Marketing" decoding="async" fetchpriority="auto" src="logo.png"/><span>DWELLIO MARKETING</span></a><a aria-label="Switch to Arabic" class="language-switch" dir="rtl" href="index-ar.html" lang="ar">AR · العربية</a><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="mobile-menu" type="button"><span></span><span></span><span></span></button><nav aria-label="Primary navigation" class="navlinks" id="primary-navigation"><a class="menu-language-switch" dir="rtl" href="index-ar.html" lang="ar">العربية <span>AR</span></a><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="services.html">Services</a><a href="index.html#process">Process</a><a href="partners.html">Partners</a><a href="contact.html">Contact</a><a class="navcta" href="https://wa.me/201094339399">Book a consultation</a></nav></div></header><main><section class="hero"><img alt="Dwellio Al Borouj living room interior" decoding="async" fetchpriority="high" src="ab-living1.jpeg"/><div class="container hero-content"><div class="eyebrow">Luxury interiors · Turnkey delivery across Egypt</div><h1>You Dream It.<br/>We Make It Happen.</h1><p class="hero-copy">Dwellio creates sophisticated, functional and fully furnished homes — from the first concept to complete move-in-ready handover.</p><div class="actions"><a class="btn-gold" href="https://wa.me/201094339399">Book a consultation</a><a class="btn-outline" href="#projects">Explore our work</a></div></div><div class="scroll-note">Scroll to discover</div></section>
-<div class="trustbar"><div class="container trustgrid"><div class="trustitem"><b>Real Projects</b><small>Only our completed work</small></div><div class="trustitem"><b>Turnkey Delivery</b><small>Design to final handover</small></div><div class="trustitem"><b>Bespoke Solutions</b><small>Designed around your property</small></div><div class="trustitem"><b>Across Egypt</b><small>Cairo · Sokhna · Hurghada</small></div></div></div>
-<section class="light" id="about"><div class="container split reveal"><div><div class="eyebrow">About Dwellio</div><h2>Considered design.<br/>Complete delivery.</h2></div><div><p>Dwellio Marketing LLC is a Cairo-based interior design and turnkey project management company. We coordinate design, custom furniture, material selection, renovation and final styling through one carefully managed process.</p><p>Our goal is simple: to deliver a refined, functional and fully completed home that feels personal to its owner.</p><div class="actions"><a class="btn-gold" href="services.html">Discover our services</a></div></div></div></section>
-<section class="dark2" id="projects"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">Selected projects</div><h2>Real spaces.<br/>Real transformations.</h2></div><p>Each project shown below is a genuine Dwellio reference, photographed in the completed property.</p></div><div class="project-grid signature-projects"><a class="project-card reveal signature-project signature-left" href="al-borouj.html"><img alt="Al Borouj" decoding="async" loading="lazy" src="ab-dining.jpeg"/><div class="project-copy"><div class="eyebrow">Cairo · 238 m²</div><h3>Al Borouj<br/>Compound</h3><p>Full interior design, bespoke joinery, turnkey fit-out and furnishing.</p><span class="link">View project →</span></div></a><a class="project-card reveal signature-project signature-right" href="il-monte-galala.html"><img alt="Il Monte Galala" decoding="async" loading="lazy" src="mg-living.jpeg"/><div class="project-copy"><div class="eyebrow">Ain Sokhna · 113 m²</div><h3>Il Monte<br/>Galala</h3><p>A warm coastal apartment shaped around comfort, natural materials and sea views.</p><span class="link">View project →</span></div></a><a class="project-card reveal signature-project signature-left" href="stone-heights.html"><img alt="Stone Heights" decoding="async" loading="lazy" src="sh-living1.jpeg"/><div class="project-copy"><div class="eyebrow">Hurghada · 65 m²</div><h3>Stone<br/>Heights</h3><p>A compact residence transformed into a complete, fully furnished retreat.</p><span class="link">View project →</span></div></a></div></div></section>
-<section class="light"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">Craftsmanship</div><h2>Details that define<br/>the whole interior.</h2></div><p>Custom joinery, integrated lighting and considered materials are central to every Dwellio project.</p></div><div class="editorial reveal"><div class="image-tile feature"><img alt="Custom kitchen" decoding="async" loading="lazy" src="ab-kitchen2.jpeg"/><span>Custom kitchen &amp; integrated lighting</span></div><div class="stack"><div class="image-tile"><img alt="Display cabinet" decoding="async" loading="lazy" src="ab-display.jpeg"/><span>Illuminated display joinery</span></div><div class="image-tile"><img alt="Wardrobe" decoding="async" loading="lazy" src="ab-wardrobe1.jpeg"/><span>Bespoke wardrobe systems</span></div></div></div></div></section>
-<section class="dark2" id="services"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">What we do</div><h2>One team.<br/>One complete solution.</h2></div></div><div class="services reveal"><div class="service"><i>01</i><h3>Interior Design</h3><p>Space planning, material palettes, lighting and furniture concepts.</p></div><div class="service"><i>02</i><h3>Turnkey Renovation</h3><p>Coordinated execution from site preparation to final installation.</p></div><div class="service"><i>03</i><h3>Custom Furniture</h3><p>Kitchens, wardrobes, storage and bespoke furniture designed to fit.</p></div><div class="service"><i>04</i><h3>Furnishing &amp; Styling</h3><p>Furniture, curtains, lighting and accessories for a finished home.</p></div></div></div></section>
-<section class="light" id="process"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">Our process</div><h2>From conversation<br/>to complete handover.</h2></div></div><div class="process-grid reveal"><div class="step"><b>01</b><h3>Consultation</h3><p>Property, lifestyle, priorities and budget.</p></div><div class="step"><b>02</b><h3>Concept</h3><p>Layout, mood, materials and visual direction.</p></div><div class="step"><b>03</b><h3>Planning</h3><p>Technical details, furniture and procurement.</p></div><div class="step"><b>04</b><h3>Execution</h3><p>Renovation, fit-out and regular quality control.</p></div><div class="step"><b>05</b><h3>Styling</h3><p>Furniture, curtains, lighting and accessories.</p></div><div class="step"><b>06</b><h3>Handover</h3><p>A complete, move-in-ready property.</p></div></div></div></section>
-<section class="partner-band"><div class="partner-image"><img alt="Project execution" decoding="async" loading="lazy" src="ab-hall2.jpeg"/></div><div class="partner-copy"><div class="eyebrow">Our trusted execution partner</div><h2>In Time<br/>Construction</h2><p>Our partnership brings design direction and on-site execution together in one coordinated workflow.</p><div class="role-grid"><div class="role"><b>Dwellio</b><small>Interior design<br/>Material selection<br/>Furniture design<br/>Project coordination</small></div><div class="role"><b>In Time Construction</b><small>Construction works<br/>MEP execution<br/>Finishing works<br/>Site implementation</small></div></div><a class="btn-outline" href="partners.html">Meet our partner</a></div></section>
-<section class="final-note light"><div class="container final-note-grid reveal"><div><div class="eyebrow">The Dwellio standard</div><h2>Quiet luxury, carefully delivered.</h2></div><div><p>Every detail is considered — from the first layout decision to the final styling moment.</p><p>One coordinated team, one clear process and one complete home.</p></div></div></section><section class="cta-section" id="contact"><div class="container reveal"><div class="eyebrow">Start your project</div><h2>Let’s create a home that feels entirely yours.</h2><p>Tell us about your property, preferred style and timeline.</p><div class="actions"><a class="btn-gold" href="https://wa.me/201094339399">WhatsApp consultation</a><a class="btn-outline" href="contact.html">Contact Dwellio</a></div></div></section></main><footer><div class="container"><div class="footergrid"><div><a class="brand" href="index.html"><img alt="Dwellio" decoding="async" fetchpriority="auto" src="logo.png"/><span>DWELLIO MARKETING</span></a><p>Luxury interior design and complete turnkey solutions across Egypt.</p></div><div><h4>Explore</h4><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="services.html">Services</a><a href="partners.html">Partners</a></div><div><h4>Projects</h4><a href="al-borouj.html">Al Borouj</a><a href="il-monte-galala.html">Il Monte Galala</a><a href="stone-heights.html">Stone Heights</a></div><div><h4>Contact</h4><a href="tel:+201094339399">+20 109 433 9399</a><a href="mailto:info@dwelliomarketing.com">info@dwelliomarketing.com</a><a href="https://instagram.com/dwelliomarketing">@dwelliomarketing</a><p>Cairo, Egypt</p></div></div><div class="copyright">© 2026 Dwellio Marketing LLC. All rights reserved.</div></div></footer><a aria-label="WhatsApp" class="whatsapp" href="https://wa.me/201094339399">◔</a><script src="script.js?v=dwellio-final-polish-v5"></script></body></html>
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"><img src="assets/hero-al-borouj.jpeg" alt="Al Borouj dining area designed by Dwellio"></div>
+  <div class="container hero-content">
+    <div class="eyebrow">Interior design & turnkey solutions across Egypt</div>
+    <h1>You Dream It.<br>We Make It Happen.</h1>
+    <p>From the first concept to a fully furnished, move-in-ready home, Dwellio coordinates design, renovation, custom furniture and final styling.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://wa.me/201094339399">Book a consultation</a>
+      <a class="btn" href="#projects">View our projects</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><strong>Real Projects</strong><small>Only our completed work</small></div>
+    <div class="trust-item"><strong>Turnkey Delivery</strong><small>From design to handover</small></div>
+    <div class="trust-item"><strong>Personalized Design</strong><small>Created around your lifestyle</small></div>
+    <div class="trust-item"><strong>Across Egypt</strong><small>Cairo · Ain Sokhna · Hurghada</small></div>
+  </div>
+</div>
+
+<section>
+  <div class="container intro">
+    <div><div class="eyebrow">About Dwellio</div><h2>Designing homes that feel unmistakably yours.</h2></div>
+    <div><p>Dwellio Marketing LLC is a Cairo-based interior design and turnkey project management company. We create functional, refined interiors and coordinate every stage of the transformation through trusted designers, suppliers, craftsmen and our construction partner.</p></div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Selected work</div><h2>Real homes.<br>Real transformations.</h2></div>
+      <p>Every image below is from a Dwellio project.</p>
+    </div>
+    <div class="project-grid">
+      <article class="card">
+        <div class="card-image"><img src="assets/hero-al-borouj.jpeg" alt="Al Borouj project"></div>
+        <div class="card-body"><h3>Al Borouj Compound</h3><div class="meta">Cairo · 238 m²</div><p>Full interior design, renovation coordination, custom furniture and complete furnishing for a spacious family home.</p><a class="text-link" href="#gallery">Explore project →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-image"><img src="assets/monte-bedroom.jpeg" alt="Il Monte Galala project"></div>
+        <div class="card-body"><h3>Il Monte Galala</h3><div class="meta">Ain Sokhna · 113 m²</div><p>A modern two-bedroom coastal apartment combining warm wood finishes, integrated lighting and practical storage.</p><a class="text-link" href="#gallery">Explore project →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-image"><img src="assets/stone-living.jpeg" alt="Stone Heights project"></div>
+        <div class="card-body"><h3>Stone Heights</h3><div class="meta">Hurghada · 65 m²</div><p>A compact one-bedroom apartment transformed into a bright, functional and fully furnished holiday home.</p><a class="text-link" href="#gallery">Explore project →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="eyebrow">What we do</div><h2>One coordinated team.<br>One complete solution.</h2>
+    <div class="service-grid">
+      <div class="service"><span>01</span><h3>Interior Design</h3><p>Space planning, materials, colour palettes, lighting concepts and furniture selection.</p></div>
+      <div class="service"><span>02</span><h3>Turnkey Renovation</h3><p>Coordinated implementation from demolition and finishing to final installation.</p></div>
+      <div class="service"><span>03</span><h3>Custom Furniture</h3><p>Purpose-designed kitchens, wardrobes, storage and bespoke furniture.</p></div>
+      <div class="service"><span>04</span><h3>Furnishing & Styling</h3><p>Furniture, curtains, lighting, accessories and final move-in-ready styling.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container details">
+    <div class="details-copy">
+      <div class="eyebrow">Signature details</div>
+      <h2>Designed. Built. Delivered.</h2>
+      <p>Our portfolio shows how thoughtful layouts, tailored joinery, integrated lighting and carefully selected finishes work together.</p>
+      <ul><li>Personalized design approach</li><li>Custom furniture and storage</li><li>Transparent project coordination</li><li>Move-in-ready handover</li></ul>
+    </div>
+    <div class="mosaic">
+      <div class="big"><img src="assets/al-borouj-kitchen.jpeg" alt="Al Borouj kitchen"></div>
+      <div><img src="assets/stone-bath.jpeg" alt="Stone Heights bathroom"></div>
+      <div><img src="assets/al-borouj-wardrobe.jpeg" alt="Al Borouj wardrobe"></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="eyebrow">Our process</div><h2>From first conversation<br>to final handover.</h2>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Consultation</h3><p>We discuss your property, needs, style, budget and timeline.</p></div>
+      <div class="step"><b>02</b><h3>Design</h3><p>We develop the layout, concept, materials and furniture plan.</p></div>
+      <div class="step"><b>03</b><h3>Quotation</h3><p>You receive a clear scope, estimated costs and project stages.</p></div>
+      <div class="step"><b>04</b><h3>Execution</h3><p>Our team coordinates renovation, production and installation.</p></div>
+      <div class="step"><b>05</b><h3>Handover</h3><p>Your finished property is styled and delivered move-in ready.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div><div class="eyebrow">Start your project</div><h2>Let us create your new home.</h2><p>Tell us about your property and your vision.</p></div>
+    <a class="btn primary" href="https://wa.me/201094339399">Contact us on WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><img src="assets/logo.png" alt="Dwellio Marketing"><p>Interior design, furnishing and turnkey renovation services across Egypt.</p></div>
+      <div><div class="eyebrow">Contact</div><p><a href="tel:+201094339399">+20 109 433 9399</a><br><a href="mailto:info@dwelliomarketing.com">info@dwelliomarketing.com</a><br><a href="https://instagram.com/dwelliomarketing">@dwelliomarketing</a></p></div>
+      <div><div class="eyebrow">Location</div><p>Cairo, Egypt<br>Projects across Egypt</p></div>
+    </div>
+    <div class="copyright">© 2026 Dwellio Marketing LLC. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
