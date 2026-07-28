@@ -1,0 +1,7 @@
+Upload these files to the GitHub repository root and replace the existing versions:
+1. index.html
+2. style.css
+3. logo.png
+
+Do not delete CNAME or any project photographs.
+The new homepage uses the existing ab-living1.jpeg as the hero image.
