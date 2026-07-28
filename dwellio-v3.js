@@ -1,0 +1,1 @@
+const b=document.querySelector('.menu'),m=document.querySelector('.links');if(b)b.onclick=()=>m.classList.toggle('open');document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>m.classList.remove('open'));

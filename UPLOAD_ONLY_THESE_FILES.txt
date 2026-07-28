@@ -1,0 +1,8 @@
+UPLOAD THESE FILES TO THE MAIN (ROOT) LEVEL OF GITHUB:
+- all .html files
+- dwellio-v3.css
+- dwellio-v3.js
+
+Do NOT upload an assets folder with this repair.
+The repair uses the image files that are already visible in the GitHub root, including logo.png and in-time-*.jpeg/png.
+After upload, open Safari and refresh the page. The new CSS/JS filenames prevent the old cached layout from being reused.
