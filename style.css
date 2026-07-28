@@ -205,3 +205,77 @@ footer{padding-top:88px}
   .navlinks{z-index:1002}
 }
 @media (max-width:900px){body.menu-open{overflow:hidden}}
+
+
+/* Dwellio mobile navigation definitive fix v3.0.1 */
+@media (max-width: 900px) {
+  header { overflow: visible !important; }
+  .nav { position: relative !important; min-height: 92px !important; }
+  .mobile-menu {
+    position: fixed !important;
+    top: 25px !important;
+    right: 18px !important;
+    z-index: 99999 !important;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    border: 1px solid rgba(255,255,255,.55) !important;
+    border-radius: 50% !important;
+    background: rgba(5,5,5,.78) !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.35) !important;
+  }
+  .mobile-menu::before,
+  .mobile-menu::after { display: none !important; content: none !important; }
+  .mobile-menu span {
+    display: block !important;
+    width: 22px !important;
+    height: 1.5px !important;
+    margin: 0 !important;
+    background: #fff !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    transform-origin: center !important;
+    transition: transform .25s ease, opacity .2s ease !important;
+  }
+  .mobile-menu[aria-expanded="true"] span:nth-child(1) { transform: translateY(7.5px) rotate(45deg) !important; }
+  .mobile-menu[aria-expanded="true"] span:nth-child(2) { opacity: 0 !important; }
+  .mobile-menu[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg) !important; }
+  .navlinks {
+    position: fixed !important;
+    inset: 0 !important;
+    top: 0 !important;
+    z-index: 99990 !important;
+    min-height: 100svh !important;
+    padding: 110px 28px 40px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 22px !important;
+    background: rgba(6,6,6,.985) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(-10px) !important;
+    transition: opacity .25s ease, visibility .25s ease, transform .25s ease !important;
+  }
+  .navlinks.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+  }
+  body.menu-open { overflow: hidden !important; }
+}
