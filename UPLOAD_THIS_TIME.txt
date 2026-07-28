@@ -1,0 +1,9 @@
+UPLOAD THESE 4 FILES TO THE GITHUB MAIN FOLDER:
+1. index.html
+2. style-premium-final.css
+3. dwellio-original-logo.png
+4. script.js
+
+Do not rename them. Replace index.html and script.js when GitHub asks.
+The hero uses the existing ab-living2.jpeg file already in the repository.
+The header uses a new unique logo filename so Safari cannot show the old D icon from cache.
